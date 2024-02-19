@@ -12,46 +12,130 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:wght@100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body>
+
+    <body style="height: 5000px">
+        <!-- --Header--- -->
+
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="logo">
-                        <img
+                    <a href="#!" class="logo"
+                        ><img
                             src="./assets/icon/logo.svg"
-                            alt=""
+                            alt="logo"
                             class="logo__img"
                         />
-                        <div class="logo__content">MODULARS</div>
+                        <div class="logo__text">MODULARS</div>
+                    </a>
+                    <div class="contact-cta">
+                        <nav class="nav-bar">
+                            <ul class="nav__list">
+                                <li class="nav-item">
+                                    <a href="#!" class="active">Home</a>
+                                </li>
+                                <li class="nav-item"><a href="#!">About</a></li>
+                                <li class="nav-item"><a href="#!">Blog</a></li>
+                                <li class="nav-item">
+                                    <a href="#!">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="btn btn__header">Sign Up</button>
                     </div>
-
-                    <!-- nav -->
-                    <nav class="nav-bar">
-                        <ul class="nav__list">
-                            <li class="nav__item">Home</li>
-                            <li class="nav__item">About</li>
-                            <li class="nav__item">Blog</li>
-                            <li class="nav__item">Contact</li>
-                        </ul>
-                    </nav>
-
-                    <!-- Call to action -->
-                    <button
-                        type="submit"
-                        id="btn"
-                        name="btn"
-                        class="btn header__btn"
-                    >
-                        Sign Up
-                    </button>
                 </div>
+                <div class="reactangle__header"></div>
             </div>
         </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- hero__content -->
+                    <section class="hero__content">
+                        <h1 class="section-heading hero-heading">
+                            We’re a creative design agency.
+                        </h1>
+                        <p class="section-desc hero__desc">
+                            A brilliant, modular agency template for startup’s
+                            build yours toady.
+                        </p>
+                        <div class="hero__cta">
+                            <button type="submit" class="btn hero__btn">
+                                Get in touch
+                            </button>
+                            <div class="contact-video">
+                                <span class="play-icon">
+                                    <svg
+                                        class="icon-img"
+                                        width="8"
+                                        height="10"
+                                        viewBox="0 0 8 10"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M7.48979 4.22586C8.15106 4.61996 8.13773 5.58212 7.4658 5.95775L1.49682 9.29454C0.824887 9.67017 -0.00170366 9.17755 0.00896126 8.40782L0.103701 1.57014C0.114366 0.800411 0.954284 0.330874 1.61555 0.724974L7.48979 4.22586Z"
+                                            fill="#FEF6FB"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="play-video">Watch Video</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- hero__image -->
+                    <section class="hero__image">
+                        <!-- BackGround-img -->
+
+                        <img
+                            src="./assets/img/hero1.jpg"
+                            alt=""
+                            class="hero__img"
+                        /><img
+                            src="./assets/img/hero2.jpg"
+                            alt=""
+                            class="hero__img hero__img--bottom"
+                        /><img
+                            src="./assets/img/hero3.jpg"
+                            alt=""
+                            class="hero__img"
+                        />
+
+                        <!-- string -->
+
+                        <img
+                            src="./assets/icon/string.svg"
+                            alt=""
+                            class="string__hero--left-top string"
+                        />
+                        <img
+                            src="./assets/icon/extra.svg"
+                            alt=""
+                            class="extra__hero--left-top extra"
+                        />
+                        <img
+                            src="./assets/icon/string2.svg"
+                            alt=""
+                            class="string__hero--right-bottom string"
+                        /><img
+                            src="./assets/icon/extra.svg"
+                            alt=""
+                            class="extra__hero--right-bottom extra"
+                        />
+
+                        <div class="circle-bg-hero"></div>
+                    </section>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
