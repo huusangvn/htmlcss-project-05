@@ -53,6 +53,11 @@ a {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .section-heading {
@@ -89,6 +94,10 @@ a {
     display: flex;
 }
 
+.nav-item {
+    padding: 10px 0;
+}
+
 .nav-item + .nav-item {
     margin-left: 38px;
 }
@@ -119,6 +128,15 @@ a {
     width: 16px;
     height: 2px;
     background: #143c3c;
+}
+
+.active-nav {
+    padding: 10px 0;
+}
+
+.active-nav:hover {
+    font-weight: 500;
+    color: #152427;
 }
 
 /* --------------hero------------------- */
@@ -152,13 +170,14 @@ a {
 }
 
 .contact-video {
+    cursor: pointer;
     margin-left: 36px;
 }
 
 .play-icon {
     position: relative;
     display: inline-block;
-    padding: 13px 18px;
+    padding: 12px 18px;
     border-radius: 50%;
     background: #83a17d;
     transition: ease 0.25s;
