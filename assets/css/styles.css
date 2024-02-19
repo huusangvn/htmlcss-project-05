@@ -71,3 +71,15 @@ a {
 .nav-item + .nav-item {
   margin-left: 38px;
 }
+
+.reactangle__header {
+  margin-top: 13px;
+  width: 1140px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #dddcdc 51.09%,
+    rgba(213, 213, 213, 0) 99.68%
+  );
+}
