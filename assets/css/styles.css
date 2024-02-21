@@ -389,23 +389,23 @@ a {
   padding-top: 53px;
 }
 
-.service-heading {
+.heading {
   position: relative;
   display: flex;
 }
 
-.service__info-heading {
+.info-heading {
   width: 520px;
 }
 
-.service__sub-heading {
+.sub-heading {
   font-family: Poppins;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 26px;
 }
 
-.service__sub-heading::before {
+.sub-heading::before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -414,11 +414,11 @@ a {
   margin: 0 21px 6px 0;
 }
 
-.service-title {
+.heading-title {
   margin-top: 12px;
 }
 
-.service-title::after {
+.heading-title::after {
   content: "";
   display: inline-block;
   width: 66px;
