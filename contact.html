@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo form</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <h1>Contact Us</h1>
+            <p>Any question or remarks? Just write us a message!</p>
+        </div>
+
+        <div class="container">
+            <!-- Contact info -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p class="desc">
+                    Fill up the form and our Team will get back to you within 24 hours.
+                </p>
+
+                <div class="info-item">
+                    <span class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span class="value">+84123456789</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span class="value">abc@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span class="value">123 Nguyen Chi Thanh</span>
+                </div>
+
+                <div class="socials">
+                    <a href="#!" class="item">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#!" class="item">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#!" class="item">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#!" class="item">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <div class="circle"></div>
+                <div class="circle large"></div>
+            </section>
+
+            <!-- Contact form -->
+            <div class="contact-form">
+                <form action="https://api-gateway.fullstack.edu.vn/action_page.php" autocomplete="off">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" id="first-name" class="form-input" placeholder="Enter first name"
+                                name="First-name" />
+                            <p class="form-error">Vui lòng nhập trường này</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" id="last-name" class="form-input" placeholder="Enter last name"
+                                name="Last-name" />
+                            <p class="form-error">Vui lòng nhập trường này</p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Mail</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter email" name="Email" />
+                            <p class="form-error">Vui lòng nhập trường này</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="Enter phone" name="Phone" />
+                            <p class="form-error">Vui lòng nhập trường này</p>
+                        </div>
+                    </div>
+
+                    <!-- Radio-check -->
+                    <div class="form__check-radio">
+                        <label for="" class="form-label-radio">What the of website your need?</label>
+                        <div class="form-row form-row__radio">
+                            <div class="form-group form-radio">
+                                <input type="radio" name="radio" id="web-design" class="form-input" checked
+                                    value="Web Design">
+                                <label for="web-design" class="form-label">Web Design</label>
+                            </div>
+
+                            <div class="form-group form-radio">
+                                <input type="radio" name="radio" id="web-Development" class="form-input"
+                                    value="Web Development">
+                                <label for="web-Development" class="form-label">Web Development</label>
+                            </div>
+
+                            <div class="form-group form-radio">
+                                <input type="radio" name="radio" id="logo-design" class="form-input"
+                                    value="Logo Design">
+                                <label for="logo-design" class="form-label">Logo Design</label>
+                            </div>
+
+                            <div class="form-group form-radio">
+                                <input type="radio" name="radio" id="other" class="form-input" value="Other">
+                                <label for="other" class="form-label">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="" class="fomr-label">Message</label>
+                            <textarea name="message" id="message" minlength="2" class="message"
+                                placeholder="Write your message..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row form__row-btn">
+                        <button type="submit" class="form-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
